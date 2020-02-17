@@ -20,9 +20,9 @@
 # The third example adds a Signed-off-by line to the message, that can
 # still be edited.  This is rarely a good idea.
 
-COMMIT_MSG_FILE=$1
-COMMIT_SOURCE=$2
-SHA1=$3
+.git-sh-setup
+.git-sh-setup
+commitmsg = "$(git rev-parse --git-path hooks/commit-msg)"
 
 /usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
 
