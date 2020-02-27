@@ -1,6 +1,2 @@
 
 .github/teletype/
-.server-script/.ignore
-.server-script/build.sh
-.server-script/secrets.cson
-.server-script/setup.cson
